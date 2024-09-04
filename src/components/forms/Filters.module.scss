@@ -1,0 +1,57 @@
+.filters {
+  margin: 0 40px;
+
+  .h2_button {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 0 20px;
+
+    h2 {
+      font-size: 24px;
+      color: rgb(2, 0, 79);
+      margin: 0;
+    }
+
+    button {
+      padding: 6px 8px;
+      border: 2px solid #000;
+      border-radius: 8px;
+      margin-left: 20px;
+      flex-shrink: 0;
+      cursor: pointer;
+      transition: all 0.4s ease 0s;
+
+      &:hover {
+        border-radius: 10px;
+        background-color: #ffce8d;
+      }
+
+      @media (hover: none) {
+        &:hover {
+          background-color: initial;
+        }
+      }
+    }
+  }
+
+  .fields {
+    display: flex;
+    justify-content: center;
+
+    input {
+      display: inline;
+      width: 25%;
+      margin: 20px 10px;
+      padding: 10px 12px;
+      border: 2px solid #000;
+      border-radius: 8px;
+      transition: all 0.4s ease 0s;
+      cursor: pointer;
+
+      &:hover {
+        border-radius: 14px;
+        background-color: #ffce8d;
+      }
+    }
+  }
+}
