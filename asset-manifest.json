@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/user-management/static/css/main.3f748e72.css",
+    "main.js": "/user-management/static/js/main.424c9451.js",
+    "static/media/gray_2000.jpg": "/user-management/static/media/gray_2000.f67cda6f2a52b0bd2e72.jpg",
+    "static/media/background_1stPage.jpg": "/user-management/static/media/background_1stPage.474e398edfaef1526c01.jpg",
+    "static/media/img_404.png": "/user-management/static/media/img_404.42b28341687e24c47c6f.png",
+    "static/media/wood-1759566_1920.jpg": "/user-management/static/media/wood-1759566_1920.2353af8f801bdee677d7.jpg",
+    "static/media/employee.png": "/user-management/static/media/employee.55dc4b98c8d817dc3ef4.png",
+    "static/media/avatar.png": "/user-management/static/media/avatar.d649d040f4a4e21c12da.png",
+    "static/media/avatar2.png": "/user-management/static/media/avatar2.884a51fc9f456e0599f3.png",
+    "index.html": "/user-management/index.html",
+    "main.3f748e72.css.map": "/user-management/static/css/main.3f748e72.css.map",
+    "main.424c9451.js.map": "/user-management/static/js/main.424c9451.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3f748e72.css",
+    "static/js/main.424c9451.js"
+  ]
+}
