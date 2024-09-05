@@ -1,13 +1,8 @@
 import React from "react";
-import { User } from "../../types/userTypes";
 import avatar from "../../images/avatar.png";
 import avatar2 from "../../images/avatar2.png";
 import styles from "./UserItemModal.module.scss";
-
-interface UserItemModalProps {
-  user: User;
-  onClose: () => void;
-}
+import { UserItemModalProps } from "../../types/userItemModal";
 
 const UserItemModal: React.FC<UserItemModalProps> = ({ user, onClose }) => {
   return (
