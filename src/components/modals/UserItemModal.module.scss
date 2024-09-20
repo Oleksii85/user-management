@@ -14,33 +14,42 @@
 .modalContent {
   text-align: center;
   background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  width: 500px;
-  max-width: 90%;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  z-index: 1001;
+  padding: 1.39vw;
+  border-radius: 0.55vw;
+  width: 37.5vw;
+  box-shadow: 0 0.35vw 1.04vw rgba(0, 0, 0, 0.3);
+  z-index: 11;
 
   .modal_container {
     display: flex;
     text-align: left;
     img {
       width: 40%;
-      margin-right: 20px;
+      height: auto;
+      margin-right: 2.08vw;
+    }
+    h2 {
+      font-size: 1.69vw;
+    }
+    p {
+      font-size: 1.11vw;
+      margin: 1.11vw 0;
     }
   }
 }
 
 .modal_button {
-  margin-top: 20px;
-  padding: 4px 30px;
-  border-radius: 8px;
+  margin-top: 1.39vw;
+  padding: 0.28vw 2.08vw;
+  border: 0.14vw solid #000;
+  border-radius: 0.55vw;
+  font-size: 0.97vw;
   flex-shrink: 0;
   cursor: pointer;
   transition: all 0.4s ease 0s;
 
   &:hover {
-    border-radius: 10px;
+    border-radius: 0.69vw;
     background-color: #ffce8d;
   }
 }

@@ -1,28 +1,29 @@
 .filters {
-  margin: 0 40px;
+  margin: 0 2.78vw;
 
   .h2_button {
     display: flex;
     align-items: center;
-    margin: 20px 0 0 20px;
+    margin: 1.39vw 0 0 1.39vw;
 
     h2 {
-      font-size: 24px;
-      color: rgb(2, 0, 79);
+      font-size: 1.67vw;
+      color: #02004f;
       margin: 0;
     }
 
     button {
-      padding: 6px 8px;
-      border: 2px solid #000;
-      border-radius: 8px;
-      margin-left: 20px;
+      padding: 0.42vw 0.55vw;
+      border: 0.14vw solid #000;
+      border-radius: 0.55vw;
+      font-size: 0.97vw;
+      margin-left: 1.39vw;
       flex-shrink: 0;
       cursor: pointer;
       transition: all 0.4s ease 0s;
 
       &:hover {
-        border-radius: 10px;
+        border-radius: 0.69vw;
         background-color: #ffce8d;
       }
 
@@ -40,16 +41,18 @@
 
     input {
       display: inline;
+      font-size: 0.97vw;
       width: 25%;
-      margin: 20px 10px;
-      padding: 10px 12px;
-      border: 2px solid #000;
-      border-radius: 8px;
+      margin: 1.04vw 0.69vw;
+      padding: 0.6vw 0.83vw;
+      border: 0.14vw solid #000;
+      border-radius: 0.55vw;
+      outline: none;
       transition: all 0.4s ease 0s;
       cursor: pointer;
 
       &:hover {
-        border-radius: 14px;
+        border-radius: 0.97vw;
         background-color: #ffce8d;
       }
     }

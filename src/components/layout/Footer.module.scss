@@ -1,8 +1,9 @@
 .footer {
   p {
-    font-size: 12px;
+    font-size: clamp(0.5rem, 0.83vw, 0.75rem);
     color: #ffffff;
-    letter-spacing: 2px;
+    font-weight: 500;
+    letter-spacing: 0.14vw;
     text-align: center;
     cursor: default;
   }
