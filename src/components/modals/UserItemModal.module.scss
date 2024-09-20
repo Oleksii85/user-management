@@ -53,3 +53,39 @@
     background-color: #ffce8d;
   }
 }
+@media (max-width: 481px) {
+  .modalContent {
+    padding: 4.7vw;
+    border-radius: 1vw;
+    width: 75.29vw;
+    box-shadow: 0 0.35vw 1.04vw rgba(0, 0, 0, 0.3);
+
+    .modal_container {
+      img {
+        width: 32.25vw;
+        height: auto;
+        margin-right: 4.2vw;
+      }
+      h2 {
+        font-size: 3.2vw;
+      }
+      p {
+        font-size: 2.5vw;
+        margin: 3.76vw 0;
+      }
+    }
+  }
+
+  .modal_button {
+    margin-top: 4.7vw;
+    padding: 0.6vw 7.08vw;
+    border: 0.3vw solid #000;
+    border-radius: 1vw;
+    font-size: 2.5vw;
+
+    &:hover {
+      border-radius: 1.6vw;
+      background-color: #ffce8d;
+    }
+  }
+}

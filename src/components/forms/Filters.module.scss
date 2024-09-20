@@ -58,3 +58,52 @@
     }
   }
 }
+@media (max-width: 481px) {
+  .filters {
+    margin: 0 1vw;
+    .h2_button {
+      margin: 1.39vw 5vw 0.7vw 5vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+
+      h2 {
+        font-size: 3.4vw;
+      }
+
+      button {
+        padding: 0.6vw 1.5vw;
+        border: 0.3vw solid #000;
+        border-radius: 1vw;
+        font-size: 2.5vw;
+        margin-left: 2.5vw;
+
+        &:hover {
+          border-radius: 1.6vw;
+          background-color: #ffce8d;
+        }
+      }
+    }
+
+    .fields {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      input {
+        display: inline;
+        font-size: 2.5vw;
+        width: 46%;
+        margin: 0.7vw 0.7vw;
+        padding: 0.6vw 0.83vw;
+        border: 0.3vw solid #000;
+        border-radius: 1vw;
+
+        &:hover {
+          border-radius: 1.7vw;
+        }
+      }
+    }
+  }
+}

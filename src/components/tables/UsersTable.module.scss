@@ -59,3 +59,30 @@
     }
   }
 }
+@media (max-width: 481px) {
+  .container {
+    .main {
+      .table {
+        table {
+          font-size: 2.1vw;
+          border-spacing: 0;
+          border: 0.3vw solid #000;
+          margin: 0.7vw 2vw 1.4vw;
+          border-radius: 1vw;
+          overflow: hidden;
+          th,
+          td {
+            padding: 0.49vw 0.69vw;
+            border: 0.07vw solid #727272;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+          .no_found {
+            font-size: 2.5vw;
+          }
+        }
+      }
+    }
+  }
+}
