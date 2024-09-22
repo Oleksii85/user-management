@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { User } from "../types/userTypes";
+import { fetchUsersApi } from "../api/api";
 import { UserFilters } from "../types/filtersTypes";
-import axios from "axios";
+import { User } from "../types/userTypes";
 
 type UserState = {
   users: User[];
@@ -23,8 +23,8 @@ const initialState: UserState = {
 };
 
 export const fetchUsers = createAsyncThunk("users/fetchUsers", async () => {
-  const response = await axios.get<User[]>("https://jsonplaceholder.typicode.com/users");
-  return response.data;
+  const users = await fetchUsersApi();
+  return users;
 });
 
 const userSlice = createSlice({
@@ -33,17 +33,16 @@ const userSlice = createSlice({
   initialState,
 
   reducers: {
-    setUsers(state, action: PayloadAction<User[]>) {
-      state.users = action.payload;
-    },
     setFilter(state, action: PayloadAction<{ field: keyof UserFilters; value: string }>) {
       state.filters[action.payload.field] = action.payload.value;
     },
-    addUser(state, action: PayloadAction<User>) {
-      state.users.push(action.payload);
-    },
-    removeUser(state, action: PayloadAction<User>) {
-      state.users = state.users.filter(user => user.id !== action.payload.id);
+    clearAllFilters: state => {
+      state.filters = {
+        name: "",
+        username: "",
+        email: "",
+        phone: "",
+      };
     },
   },
 
@@ -62,5 +61,5 @@ const userSlice = createSlice({
       });
   },
 });
-export const { setFilter, setUsers, addUser, removeUser } = userSlice.actions;
+export const { setFilter, clearAllFilters } = userSlice.actions;
 export default userSlice.reducer;
